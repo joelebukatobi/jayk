@@ -1,9 +1,9 @@
 import Container from '@/components/Container';
 import Button from '@/elements/Button';
 
-export default function Contact() {
+export default function Contact({ id }) {
   return (
-    <section id="contact" className="relative w-[100%] pb-[8rem] md:pb-[0rem]">
+    <section id={id} className="relative w-[100%] pb-[8rem] md:pb-[0rem]">
       <div className="w-[100%] h-[100%] overflow-hidden hidden md:block">
         <img src="/images/contact-image.png" alt="" className="w-[100vw]" />
       </div>

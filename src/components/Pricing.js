@@ -3,7 +3,7 @@ import Container from '@/components/Container';
 export default function Pricing() {
   return (
     <Container>
-      <section className="pb-[16rem] flex flex-col-reverse md:flex-row justify-between items-center">
+      <section className="py-[16rem] flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="grid grid-flow-row auto-rows-max gap-y-0 grid-cols-2 w-[100%] md:w-[70%]">
           <div className="p-[1.6rem] font-extrabold text-white text-[1.6rem] flex items-center bg-purple">Services</div>
           <div className="p-[1.6rem] font-extrabold text-white text-[1.6rem] flex items-center bg-purple">

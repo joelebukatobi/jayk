@@ -1,10 +1,12 @@
+import { useRef } from 'react';
 import Container from '@/components/Container';
-export default function About() {
+export default function About({ id, className, innerRef }) {
   return (
     <Container>
       <section
-        id="about"
-        className="flex flex-col md:flex-row space-y-[2.4rem] md:space-y-[0rem] items-end justify-between pt-[16rem]"
+        id={id}
+        className={`${className} flex flex-col md:flex-row space-y-[2.4rem] md:space-y-[0rem] items-center justify-between pt-[16rem]`}
+        ref={innerRef}
       >
         <div className="space-y-[.8rem] w-[100%] md:w-[42.31%]">
           <p className="text-purple font-extrabold uppercase">About Us</p>

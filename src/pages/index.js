@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Workflow from '@/components/Workflow';
@@ -8,19 +9,27 @@ import Contact from '../components/Contact';
 import Carousel from '@/components/Carousel';
 import FAQs from '@/components/FAQs';
 import Pricing from '@/components/Pricing';
+
+import useScrollSpy from 'react-use-scrollspy';
+
 export default function Home() {
+  const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+  const activeSection = useScrollSpy({
+    sectionElementRefs: sectionRefs,
+    offsetPx: -300,
+  });
   return (
-    <div>
-      <Navbar />
-      <Hero />
+    <>
+      <Navbar activeSection={activeSection} />
+      <Hero id="hero" innerRef={sectionRefs[0]} />
+      <About id="about" innerRef={sectionRefs[1]} />
       <Workflow />
-      <About />
-      <Services />
-      <Carousel />
-      <FAQs />
+      <Services id="whatwedo" innerRef={sectionRefs[2]} />
+      <Carousel id="reviews" innerRef={sectionRefs[3]} />
       <Pricing />
-      <Contact />
+      <FAQs id="faqs" innerRef={sectionRefs[4]} />
+      <Contact id="contact" />
       <Footer />
-    </div>
+    </>
   );
 }

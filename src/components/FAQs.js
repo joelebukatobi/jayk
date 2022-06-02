@@ -2,10 +2,10 @@ import Container from '@/components/Container';
 import Accordion from '@/components/Accordion';
 import { accordionData } from 'utils/content';
 
-export default function FAQs() {
+export default function FAQs({ id, innerRef }) {
   return (
     <Container>
-      <section id="faqs" className="py-[16rem] flex flex-col md:flex-row justify-between">
+      <section id={id} className="pb-[16rem] flex flex-col md:flex-row justify-between" ref={innerRef}>
         <div className="space-y-[2.4rem] w-[100%] md:w-[35%] mb-[2.4rem] md:mb-[0rem]">
           <h4 className="font-extrabold w-[50%]">Any questions? We got you.</h4>
           <p>

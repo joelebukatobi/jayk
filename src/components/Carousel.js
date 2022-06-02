@@ -7,14 +7,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function Carousel() {
+export default function Carousel({ id, innerRef }) {
   const swiper = useSwiper();
   return (
-    <section id="review" className="bg-purple h-[64rem] w-[100%] flex items-center justify-center">
+    <section id={id} className="bg-purple h-[64rem] w-[100%] flex items-center justify-center" ref={innerRef}>
       <Container>
         <div className="text-center">
           <p className="text-orange font-extrabold uppercase">Testimonial</p>
-          <h4 className="font-extrabold text-white">What some of our Clients say </h4>
+          <h4 className="font-extrabold text-white text-[2.4rem] md:text-[2.8rem]">What some of our Clients say </h4>
         </div>
         <Swiper loop={true} slidesPerView={1}>
           <SwiperSlide>
