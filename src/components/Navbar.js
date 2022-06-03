@@ -10,16 +10,16 @@ export default function Navbar({ activeSection }) {
   };
 
   return (
-    <Container className={'bg-white max-w-[100vw] mx-auto fixed z-50 flex justify-center'}>
+    <Container className={'bg-white max-w-[100vw] mx-auto top-0 fixed z-50 flex justify-center'}>
       <nav
         className={
           open
-            ? `${'h-[100vh] w-full pt-[3.2rem] flex justify-between relative'}`
+            ? `${'h-[100vh] pt-[1.6rem] w-full flex justify-between relative'}`
             : `${'h-[9.6rem] py-[3.2rem] w-full md:my-[0rem] flex items-center justify-between max-w-[124.8rem]'}`
         }
       >
         <Link href="/">
-          <svg className="h-[6.4rem] w-[6.4rem]">
+          <svg className="h-[6.4rem] w-[6.4rem] cursor-pointer">
             <use href="/images/sprite.svg#logo" />
           </svg>
         </Link>
@@ -32,6 +32,7 @@ export default function Navbar({ activeSection }) {
         >
           <Link href="/">
             <li
+              onClick={open ? toggle : ''}
               className={
                 activeSection === 0
                   ? 'text-[1.6rem] font-extrabold hover:text-orange hover:cursor-pointer text-orange'
@@ -43,6 +44,7 @@ export default function Navbar({ activeSection }) {
           </Link>
           <Link href="/#about">
             <li
+              onClick={open ? toggle : ''}
               className={
                 activeSection === 1
                   ? 'text-[1.6rem] font-extrabold hover:text-orange hover:cursor-pointer text-orange'
@@ -54,6 +56,7 @@ export default function Navbar({ activeSection }) {
           </Link>
           <Link href="/#whatwedo">
             <li
+              onClick={open ? toggle : ''}
               className={
                 activeSection === 2
                   ? 'text-[1.6rem] font-extrabold hover:text-orange hover:cursor-pointer text-orange'
@@ -65,6 +68,7 @@ export default function Navbar({ activeSection }) {
           </Link>
           <Link href="/#reviews">
             <li
+              onClick={open ? toggle : ''}
               className={
                 activeSection === 3
                   ? 'text-[1.6rem] font-extrabold hover:text-orange hover:cursor-pointer text-orange'
@@ -76,6 +80,7 @@ export default function Navbar({ activeSection }) {
           </Link>
           <Link href="/#faqs">
             <li
+              onClick={open ? toggle : ''}
               className={
                 activeSection === 4
                   ? 'text-[1.6rem] font-extrabold hover:text-orange hover:cursor-pointer text-orange'
@@ -87,7 +92,12 @@ export default function Navbar({ activeSection }) {
           </Link>
         </ul>
         <Link href="/#contact" passHref>
-          <Button className={open ? `${'absolute top-[37rem] ml-[0.8rem]'}` : `${'hidden md:flex'}`}>Contact</Button>
+          <Button
+            onClick={open ? toggle : ''}
+            className={open ? `${'absolute top-[37rem] ml-[0.8rem]'}` : `${'hidden md:flex'}`}
+          >
+            Contact
+          </Button>
         </Link>
         <div onClick={toggle} className="md:hidden focus:outline-none focus:select-none">
           <svg className="w-[4rem] m:h-[4rem] h-[6.4rem] fill-purple cursor-pointer">

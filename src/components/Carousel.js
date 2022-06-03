@@ -10,7 +10,11 @@ import 'swiper/css/pagination';
 export default function Carousel({ id, innerRef }) {
   const swiper = useSwiper();
   return (
-    <section id={id} className="bg-purple h-[64rem] w-[100%] flex items-center justify-center" ref={innerRef}>
+    <section
+      id={id}
+      className="bg-purple mt-[16rem] py-[8rem] md:py-[16rem] sw-[100%] flex items-center justify-center"
+      ref={innerRef}
+    >
       <Container>
         <div className="text-center">
           <p className="text-orange font-extrabold uppercase">Testimonial</p>

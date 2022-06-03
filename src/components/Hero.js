@@ -7,7 +7,7 @@ export default function Hero({ id, className, innerRef }) {
     <Container>
       <section
         id={id}
-        className={`${className} flex flex-col items-center justify-center text-center space-y-[2.4rem] pt-[12rem] md:pt-[16rem]`}
+        className={`${className} flex flex-col items-center justify-center text-center space-y-[2.4rem] pt-[8rem] pb-[16rem] md:pt-[25rem] md:pb-[15rem] mt-[9.6rem]`}
         ref={innerRef}
       >
         <h1 className="font-black w-[100%] md:w-[72.6%] text-[6rem] md:text-[6.7rem] marker:leading-[8.4rem]">

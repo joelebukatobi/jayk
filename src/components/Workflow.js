@@ -3,9 +3,10 @@ import Container from '@/components/Container';
 export default function Workflow() {
   return (
     <Container>
-      <section className="w-[100%] mx-auto pt-[15.2rem] flex flex-col items-center space-y-[3.2rem]">
+      <section className="w-[100%] mx-auto pt-[4rem] flex flex-col items-start space-y-[3.2rem]">
         <div className="header">
-          <h4 className="font-bold">Our Workflow</h4>
+          <p className="text-purple font-extrabold uppercase">About Us</p>
+          <h4 className="font-extrabold w-[100%]">Our Workflow</h4>
         </div>
         <div className="flex flex-col space-y-[2.4rem] md:space-y-[0rem] md:flex-row justify-between">
           <div className="flex space-x-[1.6rem] w-100%; md:w-[30%]">

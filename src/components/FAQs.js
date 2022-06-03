@@ -5,7 +5,7 @@ import { accordionData } from 'utils/content';
 export default function FAQs({ id, innerRef }) {
   return (
     <Container>
-      <section id={id} className="pb-[16rem] flex flex-col md:flex-row justify-between" ref={innerRef}>
+      <section id={id} className="pb-[16rem] md:pt-[12rem] flex flex-col md:flex-row justify-between" ref={innerRef}>
         <div className="space-y-[2.4rem] w-[100%] md:w-[35%] mb-[2.4rem] md:mb-[0rem]">
           <h4 className="font-extrabold w-[50%]">Any questions? We got you.</h4>
           <p>
@@ -19,9 +19,9 @@ export default function FAQs({ id, innerRef }) {
             </svg>
           </p>
         </div>
-        <div className="w-[100%] md:w-[49.83%] space-y-[2.4rem]">
+        <div className="w-[100%] mt-[4rem] md:mt-[0] md:w-[49.83%] space-y-[2.4rem]">
           {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
+            <Accordion key={title} title={title} content={content} />
           ))}
         </div>
       </section>

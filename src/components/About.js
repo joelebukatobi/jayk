@@ -5,7 +5,7 @@ export default function About({ id, className, innerRef }) {
     <Container>
       <section
         id={id}
-        className={`${className} flex flex-col md:flex-row space-y-[2.4rem] md:space-y-[0rem] items-center justify-between pt-[16rem]`}
+        className={`${className} flex flex-col md:flex-row space-y-[2.4rem] md:space-y-[0rem] items-center justify-between pt-[0rem]`}
         ref={innerRef}
       >
         <div className="space-y-[.8rem] w-[100%] md:w-[42.31%]">

@@ -4,7 +4,7 @@ import Container from '@/components/Container';
 export default function Services({ id, className, innerRef }) {
   return (
     <Container>
-      <section id={id} className={`${className} space-y-[6.4rem] py-[16rem]`} ref={innerRef}>
+      <section id={id} className={`${className} space-y-[6.4rem] mt-[16rem] pt-[8rem]`} ref={innerRef}>
         <div className="space-y-[.8rem]">
           <p className="text-purple font-extrabold uppercase">What We Do</p>
           <h4 className="font-extrabold w-[100%] md:w-[50.64%]">Why JayK? Here are some of our services</h4>
