@@ -10,6 +10,7 @@ import Carousel from '@/components/Carousel';
 import FAQs from '@/components/FAQs';
 import Pricing from '@/components/Pricing';
 
+import Hours from '@/components/Hours';
 import useScrollSpy from 'react-use-scrollspy';
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <Carousel id="reviews" innerRef={sectionRefs[3]} />
       <Pricing />
       <FAQs id="faqs" innerRef={sectionRefs[4]} />
+      <Hours />
       <Contact id="contact" />
       <Footer />
     </>

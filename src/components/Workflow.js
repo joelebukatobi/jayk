@@ -12,14 +12,14 @@ export default function Workflow() {
           <div className="flex space-x-[1.6rem] w-100%; md:w-[30%]">
             <p className="text-orange font-extrabold">01</p>
             <p className="font-medium">
-              Engage our ever ready team on any number of our multiple academic packages you'd like to access
+              Engage our ever-ready team on any number of our multiple academic packages you would like to access
             </p>
           </div>
           <div className="flex space-x-[1.6rem] w-100%; md:w-[30%]">
             <p className="text-orange font-extrabold">02</p>
             <p className="font-medium">
-              Outline the requirements of the academic undertaking in general be it a term paper or presentation. You
-              could book a session with any member of our team so we fully understand what you need
+              Outline the requirements of your research work. Then send a direct message to any of the digits stated
+              below, so we can fully understand what you need
             </p>
           </div>
           <div className="flex space-x-[1.6rem] w-100%; md:w-[30%]">

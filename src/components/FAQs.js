@@ -9,8 +9,8 @@ export default function FAQs({ id, innerRef }) {
         <div className="space-y-[2.4rem] w-[100%] md:w-[35%] mb-[2.4rem] md:mb-[0rem]">
           <h4 className="font-extrabold w-[50%]">Any questions? We got you.</h4>
           <p>
-            Over time we've gotten a number of questions from our large number of ever growing clientele. We've compile
-            some of them so as to make things easier for you.
+            Over time we have gotten several questions from clients and have compiled some of them to make things easier
+            for you.
           </p>
           <p className="flex items-center text-purple font-extrabold">
             More FAQs
