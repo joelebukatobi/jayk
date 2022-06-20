@@ -5,59 +5,49 @@ export default function Services({ id, className, innerRef }) {
   return (
     <Container>
       <section id={id} className={`${className} space-y-[6.4rem] mt-[16rem] pt-[8rem]`} ref={innerRef}>
-        <div className="space-y-[.8rem]">
-          <p className="text-purple font-extrabold uppercase">What We Do</p>
-          <h4 className="font-extrabold w-[100%] md:w-[50.64%]">Why JayK? Here are some of our services</h4>
-          <p className="w-[100%] md:w-[65%]">
-            Our Academy has the best professional researchers who support the client's throughout the writing process.
-            Also, our clients are assured of a satisfying grade.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-x-[4.25%]">
-          <div className="space-y-[1.6rem] w-[100%] md:w-[20.59%] mb-[4.25%]">
-            <svg className="h-[3.2rem] w-[3.2rem]">
-              <use href="/images/sprite.svg#icon-feature" />
-            </svg>
-            <h6 className="font-bold">Academic Research Writing </h6>
+        <div className="flex flex-col md:flex-row justify-between ">
+          <div className="space-y-[.8rem] md:w-[55%] mb-[4rem] md:mb-[0]">
+            <p className="text-purple font-extrabold uppercase">What We Do</p>
+            <h4 className="font-extrabold w-[100%]">
+              Why JayK? <br />
+              Here are some of our services
+            </h4>
             <p>
-              From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.
+              Our Academy has the best professional researchers who support the client's throughout the writing process.
+              Also, our clients are assured of a satisfying grade.
             </p>
           </div>
-          <div className="space-y-[1.6rem] w-[100%] md:w-[20.59%] mb-[4.25%]">
-            <svg className="h-[3.2rem] w-[3.2rem]">
-              <use href="/images/sprite.svg#icon-feature" />
-            </svg>
-            <h6 className="font-bold">Editing & Proofreading</h6>
-            <p>
-              From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.
-            </p>
-          </div>
-          <div className="space-y-[1.6rem] w-[100%] md:w-[20.59%] mb-[4.25%]">
-            <svg className="h-[3.2rem] w-[3.2rem]">
-              <use href="/images/sprite.svg#icon-feature" />
-            </svg>
-            <h6 className="font-bold">Powerpoint Presentations</h6>
-            <p>
-              From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.
-            </p>
-          </div>
-          <div className="space-y-[1.6rem] w-[100%] md:w-[20.59%] mb-[4.25%]">
-            <svg className="h-[3.2rem] w-[3.2rem]">
-              <use href="/images/sprite.svg#icon-feature" />
-            </svg>
-            <h6 className="font-bold">Data Analysis </h6>
-            <p>
-              From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.
-            </p>
-          </div>{' '}
-          <div className="space-y-[1.6rem] w-[100%] md:w-[20.59%] mb-[4.25%]">
-            <svg className="h-[3.2rem] w-[3.2rem]">
-              <use href="/images/sprite.svg#icon-feature" />
-            </svg>
-            <h6 className="font-bold">Academic Research Training </h6>
-            <p>
-              From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.
-            </p>
+          <div className="flex flex-col space-y-[1.6rem] md:w-[30%]">
+            <div className="w-[100%] flex items-center">
+              <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
+                <use href="/images/sprite.svg#icon-feature" />
+              </svg>
+              <h6 className="font-bold">Academic Research Writing </h6>
+            </div>
+            <div className="w-[100%] flex items-center">
+              <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
+                <use href="/images/sprite.svg#icon-feature" />
+              </svg>
+              <h6 className="font-bold">Editing & Proofreading</h6>
+            </div>
+            <div className="w-[100%] flex items-center">
+              <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
+                <use href="/images/sprite.svg#icon-feature" />
+              </svg>
+              <h6 className="font-bold">Powerpoint Presentations</h6>
+            </div>
+            <div className="w-[100%] flex items-center">
+              <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
+                <use href="/images/sprite.svg#icon-feature" />
+              </svg>
+              <h6 className="font-bold">Data Analysis </h6>
+            </div>{' '}
+            <div className="w-[100%] flex items-center">
+              <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
+                <use href="/images/sprite.svg#icon-feature" />
+              </svg>
+              <h6 className="font-bold">Academic Research Training </h6>
+            </div>
           </div>
         </div>
       </section>

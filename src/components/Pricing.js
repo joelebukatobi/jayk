@@ -22,7 +22,7 @@ export default function Pricing() {
           </div>
           <div className="p-[1.6rem] text-[1.6rem] flex items-center">50,000 (Optional)</div>
           <div className="p-[1.6rem] text-[1.6rem] flex items-center bg-black/5">Questionnaire</div>
-          <div className="p-[1.6rem] text-[1.6rem] flex items-center bg-black/5"> 5,000 per Chapter</div>
+          <div className="p-[1.6rem] text-[1.6rem] flex items-center bg-black/5">2,500 per Chapter</div>
           <div className="p-[1.6rem] text-[1.6rem] flex items-center">Analysis of Observation Ethnographic Data</div>
           <div className="p-[1.6rem] text-[1.6rem] flex items-center">50,000 (Optional)</div>
           <div className="p-[1.6rem] text-[1.6rem] flex items-center bg-black/5">SPSS</div>
