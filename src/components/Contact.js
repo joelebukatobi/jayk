@@ -1,7 +1,26 @@
+import { useState } from 'react';
 import Container from '@/components/Container';
 import Button from '@/elements/Button';
 
 export default function Contact({ id }) {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify({
+        message: message,
+        email: email,
+        name: name,
+        subject: subject,
+      }),
+    });
+  };
   return (
     <section id={id} className="relative w-[100%] pb-[8rem] md:pb-[0rem]">
       <div className="w-[100%] h-[100%] overflow-hidden hidden md:block">
@@ -12,6 +31,7 @@ export default function Contact({ id }) {
         <form
           action=""
           className="w-[100%] p-[3.2rem] md:p-[2.4rem] xl:p-[6.4rem] md:w-[52rem] xl:w-[60.8rem] bg-purple md:absolute md:top-[50%] z-10 rounded-[.8rem] md:translate-y-[-50%] space-y-[1.6rem] md:space-y-[.8rem] lg:space-y-[1.6rem]"
+          onSubmit={handleSubmit}
         >
           <header className="space-y-[.8rem]">
             <p className="text-orange font-bold uppercase ">contact us</p>
@@ -19,22 +39,46 @@ export default function Contact({ id }) {
           </header>
           <input
             type="text"
+            name="name"
+            id="name"
             className="rounded-[.4rem] h-[4.8rem] w-full outline-none border-none
                px-[1.6rem] text-[1.6rem]"
             placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
           />
           <input
+            name="email"
+            id="email"
             type="email"
             className="rounded-[.4rem] h-[4.8rem] w-full outline-none border-none 
                px-[1.6rem] text-[1.6rem]"
             placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            name="subject"
+            id="subject"
+            type="text"
+            className="rounded-[.4rem] h-[4.8rem] w-full outline-none border-none 
+             px-[1.6rem] text-[1.6rem]"
+            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
           />
           <textarea
-            name=""
-            id=""
-            className="rounded-[.4rem] w-full h-[17.6rem] outline-none border-none
+            name="message"
+            id="message "
+            className="rounded-[.4rem] w-full h-[17.6rem] md:h-[11.2rem] lg:h-[17.6rem] outline-none border-none
                px-[1.6rem] py-[1.6rem] text-[1.6rem]"
             placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
           ></textarea>
           <Button className={'bg-orange'}>Send</Button>
         </form>
