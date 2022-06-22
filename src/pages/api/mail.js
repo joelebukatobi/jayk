@@ -7,7 +7,7 @@ export default async (req, res) => {
   console.log(body.email);
 
   await mail.send({
-    to: 'joelebuka@gmail.com',
+    to: 'jayacademy@yahoo.com',
     from: body.email,
     subject: body.subject,
     text: body.message,

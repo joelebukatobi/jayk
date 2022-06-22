@@ -10,12 +10,12 @@ export default function Navbar({ activeSection }) {
   };
 
   return (
-    <Container className={'bg-white max-w-[100vw] mx-auto top-0 fixed z-50 flex justify-center'}>
-      <nav
+    <Container className={'bg-white max-w-[100vw] px-[0rem] mx-auto top-0 fixed z-50 flex justify-center'}>
+      <Container
         className={
           open
-            ? `${'h-[100vh] pt-[1.6rem] w-full flex justify-between relative'}`
-            : `${'h-[9.6rem] py-[3.2rem] w-full md:my-[0rem] flex items-center justify-between max-w-[124.8rem]'}`
+            ? `${'h-[70vh] p-[3.2rem] w-full flex justify-between relative'}`
+            : `${'md:h-[10vh] py-[3.2rem] md:py-[0rem] flex items-center justify-between max-w-[124.8rem] w-[100%]'}`
         }
       >
         <Link href="/">
@@ -26,7 +26,7 @@ export default function Navbar({ activeSection }) {
         <ul
           className={
             open
-              ? `${'flex flex-col absolute top-[12.8rem] pl-[0.8rem] w-[100%] left-0 space-x-[0rem] space-y-[2.4rem]'}`
+              ? `${'flex flex-col absolute top-[12.8rem] pl-[4rem] w-[100%] left-0 space-x-[0rem] space-y-[2.4rem]'}`
               : `${'space-x-[5.6rem] hidden md:flex'}`
           }
         >
@@ -104,7 +104,7 @@ export default function Navbar({ activeSection }) {
             <use href={open ? `/images/sprite.svg#icon-close` : `/images/sprite.svg#icon-menu`} />
           </svg>
         </div>
-      </nav>
+      </Container>
     </Container>
   );
 }
