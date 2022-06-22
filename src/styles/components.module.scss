@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+  width: 0.6rem;
+  &-track {
+    background: rgba(#270b79, 0.16);
+  }
+  &-thumb {
+    background: #270b79;
+  }
+}

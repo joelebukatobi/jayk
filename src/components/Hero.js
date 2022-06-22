@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import Container from '@/components/Container';
+import Link from 'next/link';
 import Button from '@/elements/Button';
 
 export default function Hero({ id, className, innerRef }) {
@@ -17,7 +16,9 @@ export default function Hero({ id, className, innerRef }) {
           Writing a <span className="text-orange">Dissertation</span> has never been easier
         </h1>
         <p className="w-[100%] md:w-[100%] text-[2.4rem] font-medium">Need help with your essay? 👇🏽</p>
-        <Button>Get Started</Button>
+        <Link href="/#contact" passHref>
+          <Button>Get Started</Button>
+        </Link>
       </div>
     </section>
   );

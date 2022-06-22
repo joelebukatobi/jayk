@@ -12,6 +12,7 @@ import Pricing from '@/components/Pricing';
 
 import Hours from '@/components/Hours';
 import useScrollSpy from 'react-use-scrollspy';
+import Message from '@/components/Message';
 
 export default function Home() {
   const sectionRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -31,6 +32,7 @@ export default function Home() {
       <Hours />
       <Contact id="contact" />
       <Footer />
+      <Message />
     </>
   );
 }
