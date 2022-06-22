@@ -14,7 +14,6 @@ export default function Services({ id, className, innerRef }) {
             </h4>
             <p>
               Our Academy has the best professional researchers who support the client's throughout the writing process.
-              Also, our clients are assured of a satisfying grade.
             </p>
           </div>
           <div className="flex flex-col space-y-[1.6rem] md:w-[30%]">
@@ -22,7 +21,7 @@ export default function Services({ id, className, innerRef }) {
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
                 <use href="/images/sprite.svg#icon-feature" />
               </svg>
-              <h6 className="font-bold">Academic Research Writing </h6>
+              <h6 className="font-bold">Academic Research Consultation </h6>
             </div>
             <div className="w-[100%] flex items-center">
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -34,7 +33,7 @@ export default function Services({ id, className, innerRef }) {
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
                 <use href="/images/sprite.svg#icon-feature" />
               </svg>
-              <h6 className="font-bold">Powerpoint Presentations</h6>
+              <h6 className="font-bold">Powerpoint Help</h6>
             </div>
             <div className="w-[100%] flex items-center">
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">

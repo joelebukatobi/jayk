@@ -27,7 +27,6 @@ export default function Home() {
       <Workflow />
       <Services id="whatwedo" innerRef={sectionRefs[2]} />
       <Carousel id="reviews" innerRef={sectionRefs[3]} />
-      <Pricing />
       <FAQs id="faqs" innerRef={sectionRefs[4]} />
       <Hours />
       <Contact id="contact" />
