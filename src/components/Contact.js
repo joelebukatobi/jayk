@@ -98,7 +98,7 @@ export default function Contact({ id }) {
           </form>
         </Container>
       </section>
-      <Success toggle={toggle} className={!open ? `block` : `hidden`} />
+      <Success toggle={toggle} className={open ? `block` : `hidden`} />
     </>
   );
 }

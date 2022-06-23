@@ -6,7 +6,7 @@ import Button from '@/elements/Button';
 export default function Navbar({ activeSection }) {
   const [open, setOpen] = useState(false);
   const toggle = () => {
-    setOpen(false);
+    setOpen(!open);
   };
 
   return (
