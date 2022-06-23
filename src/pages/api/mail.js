@@ -4,7 +4,6 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req, res) => {
   const body = JSON.parse(req.body);
-  console.log(body.email);
 
   await mail.send({
     to: 'jay_academy@yahoo.com',
