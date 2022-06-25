@@ -16,7 +16,8 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-use-scrollspy": "^3.0.2",
-    "swiper": "^8.1.5"
+    "swiper": "^8.1.5",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
