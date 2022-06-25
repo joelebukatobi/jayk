@@ -1,13 +1,7 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import Button from '@/elements/Button';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function Hero({ id, className, innerRef }) {
-  useEffect(() => {
-    AOS.init({});
-  }, []);
   return (
     <section
       id={id}
@@ -17,12 +11,7 @@ export default function Hero({ id, className, innerRef }) {
       <div className="absolute hidden md:block z-[-1] top-[0rem] h-[100%] w-[100%] overflow-hidden">
         <img className="w-[100%]" src="/images/hero.svg" alt="" />
       </div>
-      <div
-        data-aos="zoom-in-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        className="flex flex-col space-y-[2.4rem] items-center w-[100% md:w-[50%]"
-      >
+      <div className="flex flex-col space-y-[2.4rem] items-center w-[100% md:w-[50%]">
         <h1 className="font-black w-[100%] text-[6rem] md:text-[5rem] xl:text-[7rem] marker:leading-[8.4rem]">
           Writing a <span className="text-orange">Dissertation</span> has never been easier
         </h1>
