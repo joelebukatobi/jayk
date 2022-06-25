@@ -40,7 +40,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1400"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -51,7 +51,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1600"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -62,7 +62,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="1800"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -73,7 +73,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">

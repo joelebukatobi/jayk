@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 export default function Hero({ id, className, innerRef }) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({});
   }, []);
   return (
     <section
@@ -19,7 +19,7 @@ export default function Hero({ id, className, innerRef }) {
       </div>
       <div
         data-aos="zoom-in-up"
-        data-aos-duration="1500"
+        data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         className="flex flex-col space-y-[2.4rem] items-center w-[100% md:w-[50%]"
       >
