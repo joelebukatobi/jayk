@@ -12,8 +12,8 @@ export default function Services({ id, className, innerRef }) {
         <div className="flex flex-col md:flex-row justify-between ">
           <div
             className="space-y-[.8rem] md:w-[55%] mb-[4rem] md:mb-[0]"
-            data-aos="fade-up-right"
-            data-aos-duration="1500"
+            data-aos="fade-up"
+            data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
             <p className="text-purple font-extrabold uppercase">What We Do</p>
@@ -29,7 +29,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="500"
+              data-aos-duration="1200"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -40,7 +40,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="1500"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -51,7 +51,7 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="2000"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
@@ -62,18 +62,18 @@ export default function Services({ id, className, innerRef }) {
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="2500"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">
                 <use href="/images/sprite.svg#icon-feature" />
               </svg>
               <h6 className="font-bold">Data Analysis </h6>
-            </div>{' '}
+            </div>
             <div
               className="w-[100%] flex items-center"
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="3000"
               data-aos-easing="ease-in-out"
             >
               <svg className="h-[3.2rem] w-[3.2rem] mr-[1.6rem]">

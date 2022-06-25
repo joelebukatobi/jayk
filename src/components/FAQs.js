@@ -10,7 +10,7 @@ export default function FAQs({ id, innerRef }) {
   }, []);
   return (
     <Container>
-      <section id={id} className="pb-[16rem] md:pt-[12rem] flex flex-col md:flex-row justify-between" ref={innerRef}>
+      <section id={id} className="pb-[16rem] pt-[16rem] flex flex-col md:flex-row justify-between" ref={innerRef}>
         <div
           className="space-y-[2.4rem] w-[100%] md:w-[35%] mb-[2.4rem] md:mb-[0rem]"
           data-aos="fade-up-right"
