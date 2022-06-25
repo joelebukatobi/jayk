@@ -16,7 +16,7 @@ export default function About({ id, className, innerRef }) {
         <div
           className="space-y-[.8rem] w-[100%] md:w-[42.31%]"
           data-aos="fade-up-right"
-          data-aos-duration="1500"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <p className="text-purple font-extrabold uppercase">About Us</p>

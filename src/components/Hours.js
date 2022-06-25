@@ -12,7 +12,7 @@ export default function Hours() {
         <div
           className="space-y-[1.6rem] md:w-[35%]"
           data-aos="fade-up-right"
-          data-aos-duration="1500"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <h4 className=" font-extrabold">Working Hours</h4>
@@ -29,7 +29,7 @@ export default function Hours() {
         <div
           className="space-y-[1.6rem] md:w-[49.83%] mt-[4rem] md:mt-[0]"
           data-aos="fade-up-left"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
           <h4 className=" font-extrabold">Got Inquiries?</h4>

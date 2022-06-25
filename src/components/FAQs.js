@@ -14,7 +14,7 @@ export default function FAQs({ id, innerRef }) {
         <div
           className="space-y-[2.4rem] w-[100%] md:w-[35%] mb-[2.4rem] md:mb-[0rem]"
           data-aos="fade-up-right"
-          data-aos-duration="1500"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <h4 className="font-extrabold w-[50%]">Any questions? We got you.</h4>
@@ -32,7 +32,7 @@ export default function FAQs({ id, innerRef }) {
         <div
           className="w-[100%] mt-[4rem] md:mt-[0] md:w-[49.83%] space-y-[2.4rem]"
           data-aos="fade-up-left"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
           {accordionData.map(({ title, content }) => (
