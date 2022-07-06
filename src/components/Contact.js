@@ -14,6 +14,9 @@ export default function Contact({ id }) {
     e.preventDefault();
     const res = await fetch('/api/mail', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify({
         message: message,
         email: email,
@@ -23,7 +26,6 @@ export default function Contact({ id }) {
     });
 
     const data = await res.json();
-    console.log(data.status);
 
     if (data.status === 'Ok') {
       setOpen(true);

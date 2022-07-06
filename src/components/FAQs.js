@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Container from '@/components/Container';
 import Accordion from '@/components/Accordion';
-import { accordionData } from 'utils/content';
+import { faqs } from 'utils/faqs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default function FAQs({ id, innerRef }) {
@@ -35,7 +35,7 @@ export default function FAQs({ id, innerRef }) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          {accordionData.map(({ title, content }) => (
+          {faqs.map(({ title, content }) => (
             <Accordion key={title} title={title} content={content} />
           ))}
         </div>

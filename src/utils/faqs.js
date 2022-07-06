@@ -1,4 +1,4 @@
-export const accordionData = [
+export const faqs = [
   {
     title: 'What to do first?',
     content: `A prospective client is free to ask questions about project writing, analysis, seminar works, term papers, conference proceedings, research reports, and journal articles or the general scope of work needed to be done via the contact form on the website or through our email, and be sure of an instant response.`,
