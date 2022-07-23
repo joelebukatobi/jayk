@@ -33,8 +33,8 @@ export default function Carousel({ id, innerRef }) {
               swiperRef.current = swiper;
             }}
           >
-            {carousel.map(({ stars, review }) => (
-              <SwiperSlide>
+            {carousel.map(({ id, review }) => (
+              <SwiperSlide key={id}>
                 <div className="relative flex flex-col items-center">
                   <div className="absolute bg-purple rounded-[50%] h-[10rem] w-[10rem] flex justify-center items-center mb-[1.6rem]">
                     <svg className="h-[3.39rem] w-[3.38rem]">
